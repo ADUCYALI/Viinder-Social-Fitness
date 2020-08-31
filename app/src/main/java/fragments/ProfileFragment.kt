@@ -14,10 +14,10 @@ import android.widget.ImageButton
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.instagramcloneapp.AccountSettingsActivity
+import com.app.viindersocialfitness.AccountSettingsActivity
 
-import com.example.instagramcloneapp.R
-import com.example.instagramcloneapp.ShowUsersActivity
+import com.app.viindersocialfitness.R
+import com.app.viindersocialfitness.ShowUsersActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DataSnapshot

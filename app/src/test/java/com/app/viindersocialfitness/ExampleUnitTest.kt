@@ -1,4 +1,4 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
 import org.junit.Test
 

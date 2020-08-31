@@ -1,4 +1,4 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
 import Adapter.CommentAdapter
 import Model.User
@@ -15,9 +15,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_account_settings.*
 import kotlinx.android.synthetic.main.activity_comments.*
-import org.w3c.dom.Comment
 
 class CommentsActivity : AppCompatActivity()
 {

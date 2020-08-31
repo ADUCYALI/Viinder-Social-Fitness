@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.instagramcloneapp.R
+import com.app.viindersocialfitness.R
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -21,8 +21,6 @@ import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import fragments.PostDetailsFragment
 import fragments.ProfileFragment
-import kotlinx.android.synthetic.main.activity_comments.*
-import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 class NotificationAdapter(
     private val mContext: Context,

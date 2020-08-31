@@ -1,4 +1,4 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
 import Model.User
 import android.app.Activity
@@ -24,7 +24,6 @@ import com.google.firebase.storage.UploadTask
 import com.squareup.picasso.Picasso
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_account_settings.*
-import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 class AccountSettingsActivity : AppCompatActivity()
 {

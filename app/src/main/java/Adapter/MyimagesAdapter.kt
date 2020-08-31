@@ -9,7 +9,7 @@ import android.widget.ImageView
 import androidx.annotation.NonNull
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.instagramcloneapp.R
+import com.app.viindersocialfitness.R
 import com.squareup.picasso.Picasso
 import fragments.PostDetailsFragment
 

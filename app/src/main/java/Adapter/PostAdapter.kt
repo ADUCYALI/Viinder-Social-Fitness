@@ -2,7 +2,6 @@ package Adapter
 
 import Model.Post
 import Model.User
-import androidx.recyclerview.widget.ListAdapter
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -11,14 +10,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
-import androidx.appcompat.view.menu.ActionMenuItemView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.instagramcloneapp.CommentsActivity
-import com.example.instagramcloneapp.MainActivity
-import com.example.instagramcloneapp.R
-import com.example.instagramcloneapp.ShowUsersActivity
+import com.app.viindersocialfitness.CommentsActivity
+import com.app.viindersocialfitness.MainActivity
+import com.app.viindersocialfitness.R
+import com.app.viindersocialfitness.ShowUsersActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DataSnapshot
@@ -29,9 +26,6 @@ import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import fragments.PostDetailsFragment
 import fragments.ProfileFragment
-import kotlinx.android.synthetic.main.activity_account_settings.*
-import kotlinx.android.synthetic.main.activity_comments.*
-import kotlinx.android.synthetic.main.posts_layout.view.*
 
 class PostAdapter
     (private val mContext: Context,

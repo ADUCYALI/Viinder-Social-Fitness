@@ -10,16 +10,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-import com.example.instagramcloneapp.R
+import com.app.viindersocialfitness.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import java.lang.Integer.reverse
-import java.lang.Long.reverse
 import java.util.*
-import java.util.Collections.reverse
 import kotlin.collections.ArrayList
 
 /**

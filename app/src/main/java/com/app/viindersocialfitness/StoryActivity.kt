@@ -1,6 +1,5 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
-import Adapter.StoryAdapter
 import Model.Story
 import Model.User
 import android.content.Intent

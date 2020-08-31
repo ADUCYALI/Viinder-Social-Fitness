@@ -1,4 +1,4 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -6,7 +6,6 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.OnCompleteListener
@@ -19,7 +18,6 @@ import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import com.theartofdev.edmodo.cropper.CropImage
-import kotlinx.android.synthetic.main.activity_add_post.*
 
 class AddStoryActivity : AppCompatActivity() {
     private var myUrl = ""

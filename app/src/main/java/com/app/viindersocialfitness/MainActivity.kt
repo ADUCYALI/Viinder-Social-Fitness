@@ -1,9 +1,7 @@
-package com.example.instagramcloneapp
+package com.app.viindersocialfitness
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.AutoCompleteTextView
-import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment

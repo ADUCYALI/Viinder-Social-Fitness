@@ -12,10 +12,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
-import com.example.instagramcloneapp.AddStoryActivity
-import com.example.instagramcloneapp.MainActivity
-import com.example.instagramcloneapp.R
-import com.example.instagramcloneapp.StoryActivity
+import com.app.viindersocialfitness.AddStoryActivity
+import com.app.viindersocialfitness.R
+import com.app.viindersocialfitness.StoryActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -23,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
-import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 class StoryAdapter (private val mContext: Context, private val mstory: List<Story>) :
 RecyclerView.Adapter<StoryAdapter.ViewHolder>()
