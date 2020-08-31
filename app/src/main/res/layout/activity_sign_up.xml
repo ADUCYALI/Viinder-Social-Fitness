@@ -12,10 +12,10 @@
         android:id="@+id/logo"
         android:layout_width="160dp"
         android:layout_height="90dp"
-        android:src="@drawable/instagram"
-        android:tint="@android:color/white"
+        android:src="@drawable/viindersocialfitness"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp">
+        android:layout_marginTop="115dp"
+        app:tint="@android:color/white">
 
     </ImageView>
 
