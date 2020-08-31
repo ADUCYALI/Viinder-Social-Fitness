@@ -5,17 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_ui"
+    android:background="@drawable/back_uii"
     tools:context=".SignUpActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="160dp"
         android:layout_height="90dp"
-        android:src="@drawable/viindersocialfitness"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
-        app:tint="@android:color/white">
+        android:layout_marginTop="60dp"
+        android:src="@drawable/viindersocialfitness">
 
     </ImageView>
 
@@ -23,14 +23,14 @@
         android:id="@+id/fullname_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/inputs_background"
-        android:padding="10dp"
         android:layout_below="@+id/logo"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="6dp"
+        android:background="@drawable/inputs_background"
+        android:hint="Nombre completo"
         android:inputType="textEmailAddress"
-        android:hint="FullName...">
+        android:padding="10dp">
 
     </EditText>
 
@@ -45,7 +45,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="6dp"
         android:inputType="textEmailAddress"
-        android:hint="UserName...">
+        android:hint="Nombre de usuario">
 
     </EditText>
 
@@ -88,7 +88,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="6dp"
         android:background="@android:color/white"
-        android:text="Register"
+        android:text="Registrate"
         android:textAllCaps="false"
         android:textSize="17dp"
         android:textColor="@android:color/black">
@@ -105,7 +105,7 @@
         android:layout_marginTop="6dp"
         android:layout_marginBottom="10dp"
         android:background="@color/colorAccent"
-        android:text="Already have an Account? Sign In"
+        android:text="Ya tienes una cuenta?"
         android:textAllCaps="false"
         android:textSize="17dp"
         android:textColor="@android:color/white">
