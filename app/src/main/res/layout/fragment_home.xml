@@ -24,11 +24,10 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/viindersocialfitness"
-                    android:layout_alignParentStart="true">
-                </ImageView>
+                    android:layout_width="114dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/barrasuperior1" />
 
                 <ImageView
                     android:layout_width="wrap_content"
