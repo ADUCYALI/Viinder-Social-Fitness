@@ -88,7 +88,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="16dp"
         android:inputType="text"
-        android:hint="Full Name">
+        android:hint="Nombre Completo">
 
     </EditText>
 
@@ -101,7 +101,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="16dp"
         android:inputType="text"
-        android:hint="UsernName">
+        android:hint="Nombre de usuario">
 
     </EditText>
 
@@ -114,7 +114,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="16dp"
         android:inputType="text"
-        android:hint="Bio">
+        android:hint="Presentación">
 
     </EditText>
 
@@ -127,7 +127,7 @@
         android:layout_marginBottom="6dp"
         android:background="@drawable/button_black_background"
         android:layout_above="@+id/delete_account_btn"
-        android:text="Logout"
+        android:text="Cerrar sesión"
         android:textColor="@color/colorPrimary"
         android:textSize="16dp"
         android:textAllCaps="false">
@@ -141,7 +141,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="6dp"
-        android:text="Delete Account"
+        android:text="Borrar cuenta"
         android:textAllCaps="false"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
