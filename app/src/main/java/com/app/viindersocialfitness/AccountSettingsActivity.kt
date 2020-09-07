@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.app.viindersocialfitness
 
 import Model.User
@@ -90,13 +92,13 @@ class AccountSettingsActivity : AppCompatActivity()
     {
         when {
             full_name_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write full name first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Escriba primero el nombre completo", Toast.LENGTH_LONG).show()
             }
             username_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write user name first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Escriba primero el nombre de usuario", Toast.LENGTH_LONG).show()
             }
             bio_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write your bio first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Primero escribe tu biografía", Toast.LENGTH_LONG).show()
             }
             else -> {
                 val usersRef = FirebaseDatabase.getInstance().reference.child("Users")
@@ -108,7 +110,7 @@ class AccountSettingsActivity : AppCompatActivity()
 
                 usersRef.child(firebaseUser.uid).updateChildren(userMap)
 
-                Toast.makeText(this, "Account information has been updated successfully.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "La información de la cuenta se ha actualizado correctamente.", Toast.LENGTH_LONG).show()
 
                 val intent = Intent(this@AccountSettingsActivity, MainActivity::class.java)
                 startActivity(intent)
@@ -148,21 +150,21 @@ class AccountSettingsActivity : AppCompatActivity()
     {
         when
         {
-            imageUri == null -> Toast.makeText(this, "Please select image", Toast.LENGTH_LONG).show()
+            imageUri == null -> Toast.makeText(this, "Por favor seleccione imagen", Toast.LENGTH_LONG).show()
             full_name_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write full name first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Escriba primero el nombre completo", Toast.LENGTH_LONG).show()
             }
             username_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write user name first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Escriba primero el nombre de usuario", Toast.LENGTH_LONG).show()
             }
             bio_profile_frag.text.toString() == "" -> {
-                Toast.makeText(this, "Please write your bio first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Primero escribe tu biografía", Toast.LENGTH_LONG).show()
             }
             else -> {
 
                 val progressDialog = ProgressDialog(this)
-                progressDialog.setTitle("Account Settings")
-                progressDialog.setMessage("Please wait, we are updating your profile...")
+                progressDialog.setTitle("Configuración de cuenta")
+                progressDialog.setMessage("Espere, estamos actualizando su perfil ....")
                 progressDialog.show()
 
                 val fileRef = storageProfilePicRef!!.child(firebaseUser!!.uid + ".jpg")
@@ -195,7 +197,7 @@ class AccountSettingsActivity : AppCompatActivity()
 
                         ref.child(firebaseUser.uid).updateChildren(userMap)
 
-                        Toast.makeText(this, "Account information has been updated successfully.", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "La información de la cuenta se ha actualizado correctamente.", Toast.LENGTH_LONG).show()
 
                         val intent = Intent(this@AccountSettingsActivity, MainActivity::class.java)
                         startActivity(intent)

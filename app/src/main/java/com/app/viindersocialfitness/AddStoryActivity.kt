@@ -54,12 +54,12 @@ class AddStoryActivity : AppCompatActivity() {
     private fun uploadStory()
     {
         when{
-            imageUri == null -> Toast.makeText(this, "Please select image first.", Toast.LENGTH_LONG).show()
+            imageUri == null -> Toast.makeText(this, "Primero seleccione la imagen...", Toast.LENGTH_LONG).show()
 
             else -> {
                 val progressDialog = ProgressDialog(this)
                 progressDialog.setTitle("Adding Story")
-                progressDialog.setMessage("Please wait, we are adding your story...")
+                progressDialog.setMessage("Espere, estamos agregando su historia ...")
                 progressDialog.show()
 
                 val fileRef = storageStoryPicRef!!.child(System.currentTimeMillis().toString() + ".jpg")
@@ -100,7 +100,7 @@ class AddStoryActivity : AppCompatActivity() {
 
                             ref.child(storyId).updateChildren(storyMap)
 
-                            Toast.makeText(this, "Story has been uploaded successfully.", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "La historia se ha subido correctamente.", Toast.LENGTH_LONG).show()
 
                             val intent = Intent(this@AddStoryActivity, MainActivity::class.java)
                             startActivity(intent)

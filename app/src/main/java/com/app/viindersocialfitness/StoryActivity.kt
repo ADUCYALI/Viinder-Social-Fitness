@@ -2,6 +2,7 @@ package com.app.viindersocialfitness
 
 import Model.Story
 import Model.User
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,6 +30,7 @@ class StoryActivity : AppCompatActivity(), StoriesProgressView.StoriesListener {
 
     var storiesProgressView: StoriesProgressView? = null
 
+    @SuppressLint("ClickableViewAccessibility")
     private val onTouchListener = View.OnTouchListener { view, motionEvent ->
 
         when(motionEvent.action)
@@ -102,7 +104,7 @@ class StoryActivity : AppCompatActivity(), StoriesProgressView.StoriesListener {
             ref.removeValue().addOnCompleteListener { task ->
                 if (task.isSuccessful)
                 {
-                    Toast.makeText(this@StoryActivity, "Deleted...", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@StoryActivity, "Borrar...", Toast.LENGTH_LONG).show()
                 }
             }
         }

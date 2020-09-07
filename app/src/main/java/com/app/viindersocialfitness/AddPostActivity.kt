@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.app.viindersocialfitness
 
 import android.app.Activity
@@ -58,13 +60,13 @@ class AddPostActivity : AppCompatActivity()
     private fun uploadImage()
     {
         when{
-            imageUri == null -> Toast.makeText(this, "Please select image first.", Toast.LENGTH_LONG).show()
-            TextUtils.isEmpty(description_post.text.toString()) -> Toast.makeText(this, "Please write description.",Toast.LENGTH_LONG).show()
+            imageUri == null -> Toast.makeText(this, "Seleccione la imagen primero.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(description_post.text.toString()) -> Toast.makeText(this, "Por favor escriba la descripción.",Toast.LENGTH_LONG).show()
 
             else -> {
                 val progressDialog = ProgressDialog(this)
-                progressDialog.setTitle("Adding New Post")
-                progressDialog.setMessage("Please wait, we are adding your picture post...")
+                progressDialog.setTitle("Agregar nueva publicación")
+                progressDialog.setMessage("Espere, estamos agregando su publicación de imagen ...")
                 progressDialog.show()
 
                 val fileRef = storagePostPicRef!!.child(System.currentTimeMillis().toString() + ".jpg")
@@ -99,7 +101,7 @@ class AddPostActivity : AppCompatActivity()
 
                             ref.child(postId).updateChildren(postMap)
 
-                            Toast.makeText(this, "Post uploaded successfully.", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Publicación cargada con éxito.", Toast.LENGTH_LONG).show()
 
                             val intent = Intent(this@AddPostActivity, MainActivity::class.java)
                             startActivity(intent)

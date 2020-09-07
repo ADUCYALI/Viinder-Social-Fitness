@@ -35,15 +35,15 @@ class SignUpActivity : AppCompatActivity() {
         val password = password_signup.text.toString()
 
         when{
-            TextUtils.isEmpty(fullName) -> Toast.makeText(this, "full name is required.", Toast.LENGTH_LONG).show()
-            TextUtils.isEmpty(userName) -> Toast.makeText(this, "user name is required.", Toast.LENGTH_LONG).show()
-            TextUtils.isEmpty(email) -> Toast.makeText(this, "email is required.", Toast.LENGTH_LONG).show()
-            TextUtils.isEmpty(password) -> Toast.makeText(this, "password is required.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(fullName) -> Toast.makeText(this, "Se requiere el nombre completo.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(userName) -> Toast.makeText(this, "Se requiere nombre de usuario.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(email) -> Toast.makeText(this, "email es requerido.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(password) -> Toast.makeText(this, "password es requerido.", Toast.LENGTH_LONG).show()
 
             else -> {
                 val progressDialog = ProgressDialog(this@SignUpActivity)
                 progressDialog.setTitle("SignUp")
-                progressDialog.setMessage("Please wait, this may take a while...")
+                progressDialog.setMessage("Espere, esto puede tardar un poco...")
                 progressDialog.setCanceledOnTouchOutside(false)
                 progressDialog.show()
 
@@ -78,7 +78,7 @@ class SignUpActivity : AppCompatActivity() {
         userMap["fullname"] = fullName.toLowerCase()
         userMap["username"] = userName.toLowerCase()
         userMap["email"] = email
-        userMap["bio"] = "Hey I am using Sanjay's coded Instagram Clone App."
+        userMap["bio"] = "Hola viinder social fitness te da la bienvenida."
         userMap["image"] = "https://firebasestorage.googleapis.com/v0/b/instagram-clone-app-6e2ec.appspot.com/o/Default%20Images%2Fprofile.png?alt=media&token=402a7a7a-c73f-443c-b271-57addbfb5c46"
 
         usersRef.child(currentUserID).setValue(userMap)
@@ -86,11 +86,11 @@ class SignUpActivity : AppCompatActivity() {
                 if(task.isSuccessful)
                 {
                     progressDialog.dismiss()
-                    Toast.makeText(this, "Account has been created successfully.", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "La cuenta se ha creado correctamente.", Toast.LENGTH_LONG).show()
 
                     FirebaseDatabase.getInstance().reference
-                        .child("Follow").child(currentUserID)
-                        .child("Following").child(currentUserID)
+                        .child("Seguir").child(currentUserID)
+                        .child("Siguiendo").child(currentUserID)
                         .setValue(true)
 
 

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.app.viindersocialfitness
 
 import android.app.ProgressDialog
@@ -32,14 +34,14 @@ class SignInActivity : AppCompatActivity() {
 
         when
         {
-            TextUtils.isEmpty(email) -> Toast.makeText(this, "email is required.", Toast.LENGTH_LONG).show()
-            TextUtils.isEmpty(password) -> Toast.makeText(this, "password is required.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(email) -> Toast.makeText(this, "email es requerido.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(password) -> Toast.makeText(this, "password es requerido.", Toast.LENGTH_LONG).show()
 
             else ->
             {
                 val progressDialog = ProgressDialog(this@SignInActivity)
                 progressDialog.setTitle("Login")
-                progressDialog.setMessage("Please wait, this may take a while...")
+                progressDialog.setMessage("Espere, esto puede tardar un poco ...")
                 progressDialog.setCanceledOnTouchOutside(false)
                 progressDialog.show()
 
